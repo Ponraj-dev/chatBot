@@ -1,0 +1,158 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #000000;
+  }
+  .main-title {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 0.5rem;
+    color: #fffbf5;
+    font-style: italic;
+  }
+  
+  #chat-window {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #1b62809b;
+
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+  #chat-messages::-webkit-scrollbar {
+    background-color: transparent;
+    border: none;
+}
+  #chat-messages {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+    overflow: auto;
+  }
+  
+  #chat-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  #chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #040505;
+    font-weight:bold;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+   
+    color: #ffffff;
+ 
+    border-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .bot-message {
+    font-family: "Roboto", sans-serif;
+    background-color: #909b9f; /* different light color */
+    color: aliceblue;
+    text-align: justify; /* keep it right-aligned */
+    padding: 15px; /* added padding */
+    margin-top: 10px; /* added margin-top to create a gap */
+    margin-bottom: 10px;
+    margin-right: 30px;
+    
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    border-radius:30px;
+    border-bottom-left-radius: 0;
+  }
+  ::-webkit-scrollbar{
+  scrollbar-color:hidden ;
+  }
+  
+  .user-message {
+    font-family: "Nunito", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #51697fd6; /* light color */
+    text-align: left; /* changed text align to left */
+    padding: 15px; /* added padding */
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    border-radius:30px;
+    border-bottom-right-radius: 0;
+  }
+  .user-message img,
+  .bot-message img {
+    width: 40px; /* adjust the width of the icon */
+    height: 40px; /* adjust the height of the icon */
+    margin-right: 20px; /* add some margin to separate the icon from the message */
+
+  }
+
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+    #chat-window {
+      width: 90%;
+      border-radius: 40px;
+      margin-top: 40px;
+      max-height: 100%
+
+    }
+    .main-title {
+      text-align: center;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: #fffbf5;
+      font-style: italic;
+      margin-top: 2%;
+      font-size: 400%;
+      padding-bottom: 10%;
+    }
+ 
+    #chat-messages {
+      max-height: calc(100vh - 470px); 
+    }
+ 
+    #chat-input {
+      margin-top: 5%;
+      flex-grow:2;
+      padding: 30px;
+      font-size: 40px;
+      border-radius: 30px;
+      font-weight:bold;      
+    }
+    button[type="submit"] {
+      background-color: transparent;
+      border-color: white;
+      margin-top: 5%;
+      font-size: large;
+      padding: 20px;
+      color:#fffbf5;
+      font-size: 300%;
+      border-radius: 20px;
+      border-width:5px;
+    }
+    .bot-message {
+      font-size: 40px;
+      margin-right: 100px;
+    }
+    .user-message {
+      font-family: "Nunito", sans-serif;
+      font-size: 40px;
+      margin-left: 100px;
+      margin-bottom: 3%;
+      
+    }
+  }
+  
+  
